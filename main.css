@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightgreen: #3fd0d4;
+    --light: #ffffff;
+    --lightblue: #2caeba;
+    --green: #044e53;
+    --skyblue: #88ebf2;
+    --darkblue: #102a42;
+    --dark: #000000;
+    --lightsilver: #f1f5f8;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7vh;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--lightsilver);
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: var(--lightgreen);
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+    letter-spacing: 3px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--dark);
+    transition: all .4s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--lightblue);
+}
+
+.navbar-icons i {
+    margin: 5px;
+    font-size: 1.2rem;
+    color: var(--lightgreen);
+}
+
+/* End of navbar */
+
+/* Header */
+header {
+    background: url("img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.header-content h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--lightsilver);
+}
+
+.header-content p {
+    width: 40%;
+    text-align: center;
+    line-height: 2;
+}
+
+.header-btn {
+    padding: 20px 70px;
+    border: none;
+    background-color: var(--lightsilver);
+    color: var(--lightblue);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* End of header */
+
+/* About us */
+.about {
+    height: 60vh;
+}
+
+.about-heading {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-heading h1 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about-heading span {
+    color: var(--lightblue);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2%;
+}
+
+.about-description h2 {
+    letter-spacing: 3px;
+}
+
+.about-description p {
+    width: 70%;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.about-img {
+    background: url(img/about.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 600px;
+    margin-left: 20%;
+}
+
+.about-img::before {
+    content: "";
+    position: absolute;
+    border: 10px solid var(--lightblue);
+    width: 580px;
+    height: 380px;
+    margin: -25px;
+    z-index: -1;
+}
+
+.about-btn button {
+    padding: 10px 40px;
+    border: none;
+    color: var(--lightsilver);
+    background-color: var(--lightblue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* End of about us */
+
+.services {
+    background-color: var(--lightsilver);
+    margin-bottom: 100px;
+    height: 30vh;
+}
+
+.services-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.services-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.services-heading span {
+    color: var(--lightblue);
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
