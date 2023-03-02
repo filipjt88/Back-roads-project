@@ -22,11 +22,6 @@ body {
 }
 
 
-.container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
 /* Navbar */
 .navbar {
@@ -197,6 +192,7 @@ header {
 
 /* End of about us */
 
+/* Services */
 .services {
     background-color: var(--lightsilver);
     height: 30vh;
@@ -243,6 +239,9 @@ header {
     align-items: center;
 }
 
+/* End of services */
+
+/* Features  */
 .cards {
     display: flex;
     justify-content: center;
@@ -302,4 +301,103 @@ p {
     justify-content: space-between;
     margin-bottom: 20px;
     margin-right: 10px;
+}
+
+/* End of features  */
+
+
+/* Subscribe */
+.subscribe {
+    height: 30vh;
+    background-color: var(--lightblue);
+}
+
+.subscribe-content {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-content h1,
+input,
+button {
+    margin: 5px;
+}
+
+.subscribe-content h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: var(--light);
+}
+
+.subscribe-content input {
+    width: 300px;
+    height: 36px;
+    border: none;
+    padding-left: 10px;
+    letter-spacing: 3px;
+}
+
+.subscribe-content button {
+    padding: 10px 40px;
+    border: none;
+    letter-spacing: 3px;
+}
+
+/* End of subscribe */
+
+/* Gallery */
+.gallery-img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-img img {
+    width: 25%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+
+.gallery-img img:hover {
+    opacity: .5;
+}
+
+/* End of gallery */
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--darkblue);
+    color: var(--lightsilver);
+}
+
+footer nav ul li a {
+    color: var(--lightsilver);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--lightsilver);
+}
+
+.footer-icons i {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+/* End of footer */
+
+@media(max-width:767px) {
+    .container {
+        overflow: hidden;
+    }
 }
