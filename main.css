@@ -199,7 +199,6 @@ header {
 
 .services {
     background-color: var(--lightsilver);
-    margin-bottom: 100px;
     height: 30vh;
 }
 
@@ -222,10 +221,85 @@ header {
 
 .services-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-left: 10%;
 }
 
 .services-content i {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.services-description {
+    margin-left: 20px;
+}
+
+.services-description p {
+    width: 70%;
+}
+
+.featured-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 27%;
+}
+
+.card-heading img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+
+.featured-heading h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.featured-heading span {
+    color: var(--lightblue);
+}
+
+.card-body {
+    width: 350px;
+    background-color: var(--lightsilver);
+}
+
+.card-body .card-title {
+    font-size: 1.3rem;
+}
+
+.card-body h4,
+p {
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body span {
+    padding-left: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
