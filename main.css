@@ -123,6 +123,13 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.header-btn:hover {
+    background-color: var(--lightblue);
+    color: var(--lightsilver);
 }
 
 /* End of header */
@@ -130,9 +137,11 @@ header {
 /* About us */
 .about {
     height: 60vh;
+    margin-bottom: 50px;
 }
 
 .about-heading {
+    margin-top: 50px;
     padding-top: 50px;
     text-align: center;
     font-size: 2rem;
@@ -141,6 +150,7 @@ header {
 .about-heading h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-bottom: 70px;
 }
 
 .about-heading span {
@@ -162,6 +172,7 @@ header {
 }
 
 .about-description h2 {
+    margin-left: 20px;
     letter-spacing: 3px;
 }
 
@@ -200,6 +211,14 @@ header {
     letter-spacing: 3px;
     font-weight: bold;
     margin-top: 20px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-left: 20px;
+}
+
+.about-btn button:hover {
+    background-color: var(--lightgreen);
+    color: var(--lightsilver);
 }
 
 /* End of about us */
@@ -231,6 +250,7 @@ header {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    margin-top: 20px;
 }
 
 .services-content i {
@@ -316,11 +336,17 @@ p {
     padding-left: 20px;
 }
 
+.card-description {
+    line-height: 1.6;
+}
+
 .card-footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     margin-right: 10px;
+    color: var(--lightblue);
+    font-weight: bolder;
 }
 
 /* End of features  */
@@ -398,6 +424,11 @@ footer {
     color: var(--lightsilver);
 }
 
+footer p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
 footer nav ul li a {
     color: var(--lightsilver);
 }
@@ -405,13 +436,21 @@ footer nav ul li a {
 .footer-icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     color: var(--lightsilver);
+    margin-bottom: 30px;
 }
 
 .footer-icons i {
     font-size: 2rem;
     margin: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: var(--light);
+}
+
+.footer-icons i:hover {
+    color: var(--lightblue);
 }
 
 /* End of footer */
