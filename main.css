@@ -31,6 +31,9 @@ body {
     height: 7vh;
     flex-wrap: wrap;
     border-bottom: 1px solid var(--lightsilver);
+    position: sticky;
+    top: 0;
+    background-color: var(--light);
 }
 
 .logo {
@@ -70,7 +73,13 @@ nav ul li a:hover {
 .navbar-icons i {
     margin: 5px;
     font-size: 1.2rem;
-    color: var(--lightgreen);
+    color: var(--lightblue);
+    transition: .5s ease-in-out;
+}
+
+.navbar-icons i:hover {
+    cursor: pointer;
+    opacity: .5;
 }
 
 /* End of navbar */
@@ -81,6 +90,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -95,12 +105,14 @@ header {
     font-size: 5rem;
     text-transform: uppercase;
     color: var(--lightsilver);
+    text-shadow: 5px 2px 5px var(--dark);
 }
 
 .header-content p {
     width: 40%;
     text-align: center;
     line-height: 2;
+    color: var(--lightsilver);
 }
 
 .header-btn {
@@ -195,7 +207,7 @@ header {
 /* Services */
 .services {
     background-color: var(--lightsilver);
-    height: 30vh;
+    height: 35vh;
 }
 
 .services-heading {
@@ -222,10 +234,18 @@ header {
 }
 
 .services-content i {
+    background-color: var(--lightblue);
+    padding: 10px;
     font-size: 3rem;
 }
 
 .services-description {
+    margin-left: 20px;
+}
+
+.services-description h4 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
     margin-left: 20px;
 }
 
