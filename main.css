@@ -17,7 +17,9 @@
     --lightsilver: #f1f5f8;
 }
 
-.container {}
+.container {
+    overflow: hidden;
+}
 
 body {
     font-family: 'Oxygen', sans-serif;
